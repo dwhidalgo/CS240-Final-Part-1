@@ -14,7 +14,7 @@ public final class ArrayStack<T> implements StackInterface<T>
 	public ArrayStack()
 	{
 		@SuppressWarnings("unchecked")
-		T[] tempStack = (T[])new Object[ARRAY_SIZE];
+		T[] tempArray = (T[])new Object[ARRAY_SIZE];
 		array = tempArray;
 		initialized = true;
 	}
@@ -125,6 +125,13 @@ public final class ArrayStack<T> implements StackInterface<T>
 		return empty;
 	}
 	
+	public void clear()
+	{
+	    for(int i = ARRAY_SIZE-1; i >= 0; i--)
+	    {
+	        array[i] = null;
+	    }
+	}
 	private void checkInitialization()
 	{
 	   if(!initialized)

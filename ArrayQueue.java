@@ -26,7 +26,7 @@ public final class ArrayQueue<T> implements QueueInterface<T>
 	public void enqueue(T newEntry)
 	{
 		checkInitialization();
-		if(end == SIZE-1)
+		if(back == SIZE-1)
 		{
 			System.out.print("No room to add.");
 		}
