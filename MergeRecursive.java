@@ -6,7 +6,7 @@ import java.util.Random;
  */
 public class MergeRecursive
 {
-    public static void sort(int[] array, int first, int last)
+    public static void sort(Integer[] array, int first, int last)
 	{
 		if (first < last) 
 		{
@@ -17,7 +17,7 @@ public class MergeRecursive
 		}
 	}
         
-    public static void merge(int[] array, int first, int mid, int last)
+    public static void merge(Integer[] array, int first, int mid, int last)
     {
         int[] firstArray = new int[mid - first + 1];
         int[] lastArray = new int[last - mid]; 

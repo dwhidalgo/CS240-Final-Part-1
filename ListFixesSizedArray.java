@@ -22,6 +22,7 @@ public class ListFixesSizedArray<T> implements ListInterface<T>
 				{
 					list[i] = newItem;
 					added = true;
+					size++;
 				}
 			}
 		}
